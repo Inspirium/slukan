@@ -211,7 +211,7 @@ export const servicesList = defineStore('serviceList', {
         {
           name: 'VacuSlim 48',
           items: [
-            { name: 'Oblikovanje tijela - Vacuslim 48', price: '28€' },
+            { name: 'Oblikovanje tijela - Vacuslim 48', price: '30€' },
 
           ],
         },
@@ -219,7 +219,7 @@ export const servicesList = defineStore('serviceList', {
           name: 'VacuSlim 48 paketi',
           items: [
             { name: 'Vacuslim 48 i anticelulitna masaža - 60 min - 10 tretmana', price: '450€' },
-            { name: 'Vacuslim 48 u kombinaciji s elektrostimulacijom i limfnom drenažom - 60 min - 10 tretmana', price: '400€' },
+            { name: 'Vacuslim 48 u kombinaciji s limfnom drenažom - 60 min - 10 tretmana', price: '400€' },
           ],
         },
       ],
