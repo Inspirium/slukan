@@ -6,7 +6,8 @@
       "Bash(pnpm remove:*)",
       "Bash(git add:*)",
       "Bash(npx --yes sharp-cli:*)",
-      "Bash(npx sharp-cli:*)"
+      "Bash(npx sharp-cli:*)",
+      "Bash(git push:*)"
     ]
   }
 }

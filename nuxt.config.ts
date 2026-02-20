@@ -1,6 +1,14 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      meta: [
+        { property: 'og:title', content: 'Slukan Interijeri' },
+        { property: 'og:description', content: 'Završni radovi u gradnji i uređenje interijera po sistemu ključ u ruke. Knauf, soboslikarski radovi, adaptacije, dekorativni elementi, izolacije, sanacije.' },
+        { property: 'og:image', content: 'https://www.slukani-interijeri.hr/slukan/suhomontaza.png' },
+        { property: 'og:url', content: 'https://www.slukani-interijeri.hr' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:locale', content: 'hr_HR' },
+      ],
       link: [
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -29,7 +37,7 @@ export default defineNuxtConfig({
       titleSeparator: '|',
       siteUrl: 'https://www.slukani-interijeri.hr',
       language: 'hr',
-      siteImage: '/slukani-interijeri.jpg',
+      siteImage: '/slukan/suhomontaza.png',
     },
   },
   googleFonts: {
