@@ -19,8 +19,8 @@ module.exports = {
       },
       colors: {
         fizio: {
-          100: '#f4e8de',
-          500: '#FF4000',
+          100: '#F5F0DE',
+          500: '#C3AE55',
         },
       },
     },

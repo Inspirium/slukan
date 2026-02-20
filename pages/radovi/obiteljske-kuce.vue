@@ -1,5 +1,5 @@
 <script setup lang="ts">
-navigateTo('/o-nama', { redirectCode: 301 })
+navigateTo('/usluge/knauf', { redirectCode: 301 })
 </script>
 
 <template>

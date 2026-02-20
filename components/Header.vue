@@ -2,18 +2,14 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { MenuIcon, XIcon } from '@heroicons/vue/outline'
 import { PlusSmIcon } from '@heroicons/vue/solid'
-import { servicesList } from '~/stores/services'
 
 const route = useRoute()
-
-const sitedata = servicesList()
 
 const navigation = computed(() => {
   return [
     { name: 'Početna', href: '/', current: route.path === '/' },
     { name: 'Usluge', href: '/usluge', current: route.path.includes('/usluge') },
-    { name: 'O nama', href: '/onama', current: route.path === '/onama' },
-    { name: 'Cjenik', href: '/cjenik', current: route.path === '/cjenik' },
+    { name: 'O nama', href: '/o-nama', current: route.path === '/o-nama' },
     { name: 'Kontakt', href: '/kontakt', current: route.path === '/kontakt' },
   ]
 })
@@ -34,10 +30,9 @@ const navigation = computed(() => {
             </DisclosureButton>
           </div>
           <NuxtLink to="/" class="flex-shrink-0 flex items-center grow md:grow-0 mr-6">
-            <img class="sm:h-16 w-auto mx-auto" src="~assets/img/logo.svg" alt="FizioAktiv">
+            <img class="h-10 sm:h-16 w-auto mx-auto" src="~assets/img/logo.svg" alt="Slukan Interijeri">
           </NuxtLink>
           <div class="hidden md:flex md:space-x-4 xl:space-x-8 justify-between">
-            <!--             Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"-->
             <NuxtLink v-for="item in navigation" :to="item.href" class="transition duration-200 uppercase inline-flex font-barlow items-center px-1 pt-1 border-b-4 text-xl font-medium" :class="[item.current ? 'text-fizio-500 border-fizio-500' : 'text-gray-500 border-transparent']">
               {{ item.name }}
             </NuxtLink>
@@ -46,7 +41,7 @@ const navigation = computed(() => {
             <div class="flex-shrink-0">
               <button type="button" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-700 transition duration-300 bg-fizio-500 hover:bg-gray-700" @click="$router.push('/kontakt')">
                 <PlusSmIcon class="-ml-1 mr-2 h-8 w-8" aria-hidden="true" />
-                <span class="font-medium uppercase text-xl">Naruči se</span>
+                <span class="font-medium uppercase text-xl">Kontakt</span>
               </button>
             </div>
           </div>
@@ -55,9 +50,7 @@ const navigation = computed(() => {
     </div>
     <DisclosurePanel class="md:hidden">
       <div class="pt-2 pb-4 space-y-1">
-        <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <div class="flex flex-col items-center space-y-6">
-          <!--             Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"-->
           <DisclosureButton v-for="item in navigation" as="a" :href="item.href" class="transition duration-200 uppercase inline-flex font-barlow items-center px-1 pt-1 border-b-4 text-xl font-medium" :class="[item.current ? 'text-fizio-500 border-fizio-500' : 'text-gray-500 border-transparent']">
             {{ item.name }}
           </DisclosureButton>

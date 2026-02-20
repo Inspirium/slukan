@@ -3,8 +3,9 @@ export default defineNuxtConfig({
     head: {
       link: [
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
       ],
     },
@@ -18,13 +19,18 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
   ],
   css: ['~/styles/main.css'],
-  site: {
-    name: 'FizioAktiv',
-    description: 'Dugogodišnje iskustvo i entuzijazam našeg tima, čija je misija kroz razne programe masaža, vježbi i terapija pomoći vam održati i unaprijediti zdravlje',
-    titleSeparator: '|',
-    url: 'https://www.fizioaktiv.hr',
-    defaultLocale: 'hr',
-    image: '/fizioaktiv_profile.jpg',
+  extends: [
+    'nuxt-seo-kit',
+  ],
+  runtimeConfig: {
+    public: {
+      siteName: 'Slukan Interijeri',
+      siteDescription: 'Završni radovi u gradnji i uređenje interijera po sistemu ključ u ruke. Knauf, soboslikarski radovi, adaptacije, dekorativni elementi, izolacije, sanacije.',
+      titleSeparator: '|',
+      siteUrl: 'https://www.slukani-interijeri.hr',
+      language: 'hr',
+      siteImage: '/slukani-interijeri.jpg',
+    },
   },
   googleFonts: {
     families: {
