@@ -69,7 +69,7 @@ const navigation = {
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
         <p class="text-base text-gray-400 xl:text-center">
-          &copy; 2022. Slukan Interijeri j.d.o.o. — Završni radovi u građevini
+          &copy; {{ new Date().getFullYear() }}. Slukan Interijeri j.d.o.o. — Završni radovi u građevini
         </p>
       </div>
     </div>
