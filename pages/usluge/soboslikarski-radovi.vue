@@ -5,7 +5,7 @@ import Contact from '~/components/Contact'
 
 <template>
   <div class="">
-    <Hero :image="'/slukan/Soboslikarski .png'">
+    <Hero :image="'/slukan/Soboslikarski.png'">
       <slot>
         <h1 class="text-4xl tracking-tight font-bold text-gray-700 font-poppins text-5xl lg:text-6xl hero-text-shadow">
           Soboslikarski <span class="text-fizio-500">radovi</span>

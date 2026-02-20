@@ -4,7 +4,7 @@ import Contact from '~/components/Contact'
 
 const services = [
   { name: 'Knauf / suhomontaža', desc: 'Gipskartonski radovi, pregradni zidovi, spušteni stropovi', image: '/slukan/suhomontaza.png', slug: 'knauf' },
-  { name: 'Soboslikarski radovi', desc: 'Bojanje, gletanje, dekorativne tehnike', image: '/slukan/Soboslikarski .png', slug: 'soboslikarski-radovi' },
+  { name: 'Soboslikarski radovi', desc: 'Bojanje, gletanje, dekorativne tehnike', image: '/slukan/Soboslikarski.png', slug: 'soboslikarski-radovi' },
   { name: 'Adaptacije', desc: 'Kompletne adaptacije stanova i kuća', image: '/slukan/Adaptacije.png', slug: 'adaptacije' },
   { name: 'Dekorativni elementi', desc: 'Ukrasni stropovi, niše, police od gipskartona', image: '/slukan/Dekorativni.png', slug: 'dekorativni-elementi' },
   { name: 'Izolacije', desc: 'Toplinska i zvučna izolacija zidova i stropova', image: '/slukan/Izolacije.png', slug: 'izolacije' },

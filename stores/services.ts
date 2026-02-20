@@ -15,7 +15,7 @@ export const servicesList = defineStore('serviceList', {
         title: 'Soboslikarski radovi',
         short_dec: 'Bojanje, gletanje, dekorativne tehnike',
         slug: 'soboslikarski-radovi',
-        image: '/slukan/Soboslikarski .png',
+        image: '/slukan/Soboslikarski.png',
       },
       {
         id: 3,
