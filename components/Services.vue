@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { computed, defineProps } from 'vue'
-import { servicesList } from '~/stores/services'
-
-const sitedata = servicesList()
+import { usluge } from '~/stores/services'
 
 const props = defineProps({
   hide: {
@@ -21,7 +19,7 @@ const props = defineProps({
       Naše usluge — <span class="text-fizio-500 text-5xl">Slukan Interijeri</span>
     </h2>
     <div class="md:flex flex-wrap justify-center flex-col sm:flex-row sm:space-x-7">
-      <nuxt-link v-for="item in sitedata.usluge" :key="item.id" :to="'/' + item.slug" class="grow-0 rounded-3xl flex overflow-hidden flex-col lg:outline outline-4 outline-transparent lg:hover:outline-fizio-500 lg:hover:border-fizio-500 shadow-xl hover:shadow-sm transform duration-200 lg:w-1/5 hover:cursor-pointer mb-10">
+      <nuxt-link v-for="item in usluge" :key="item.id" :to="'/' + item.slug" class="grow-0 rounded-3xl flex overflow-hidden flex-col lg:outline outline-4 outline-transparent lg:hover:outline-fizio-500 lg:hover:border-fizio-500 shadow-xl hover:shadow-sm transform duration-200 lg:w-1/5 hover:cursor-pointer mb-10">
         <div class="p-4">
           <h2 class="font-barlow font-normal text-gray-700 text-3xl mb-3">
             {{ item.title }}

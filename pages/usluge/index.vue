@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import Hero from '~/components/Hero'
 import Contact from '~/components/Contact'
-import { servicesList } from '~/stores/services'
-
-const sitedata = servicesList()
+import { usluge } from '~/stores/services'
 </script>
 
 <template>
@@ -27,7 +25,7 @@ const sitedata = servicesList()
 
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="md:flex flex-wrap justify-center flex-col sm:flex-row sm:space-x-7">
-        <NuxtLink v-for="item in sitedata.usluge" :key="item.id" :to="'/usluge/' + item.slug" class="grow-0 rounded-3xl flex overflow-hidden flex-col lg:outline outline-4 outline-transparent lg:hover:outline-fizio-500 lg:hover:border-fizio-500 shadow-xl hover:shadow-sm transform duration-200 lg:w-1/5 hover:cursor-pointer mb-10">
+        <NuxtLink v-for="item in usluge" :key="item.id" :to="'/usluge/' + item.slug" class="grow-0 rounded-3xl flex overflow-hidden flex-col lg:outline outline-4 outline-transparent lg:hover:outline-fizio-500 lg:hover:border-fizio-500 shadow-xl hover:shadow-sm transform duration-200 lg:w-1/5 hover:cursor-pointer mb-10">
           <img v-if="item.image" class="object-cover h-40 w-full" :src="item.image" :alt="item.title">
           <div class="p-4">
             <h2 class="font-barlow font-normal text-gray-700 text-3xl mb-3">
